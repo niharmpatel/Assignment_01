@@ -10,4 +10,7 @@ router.get('/home', function(req, res, next) {
   res.render('home', { title: 'Home' });
 });
 
+router.get('/about', function(req, res, next) {
+  res.render('about', { title: 'About me' });
+});
 module.exports = router;
