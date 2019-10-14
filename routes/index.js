@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/home', function(req, res, next) {
-  res.render('home', { title: 'Home' });
+  res.render('home', { title: 'Nihar Patel' });
 });
 
 router.get('/about', function(req, res, next) {
@@ -16,10 +16,10 @@ router.get('/about', function(req, res, next) {
 
 
 router.get('/project', function(req, res, next) {
-  res.render('project', { title: 'projects' });
+  res.render('project', { title: 'Projects' });
 });
 
 router.get('/contact', function(req, res, next) {
-  res.render('contact', { title: 'contact' });
+  res.render('contact', { title: 'Contact' });
 });
 module.exports = router;
