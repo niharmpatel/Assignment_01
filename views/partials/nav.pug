@@ -3,14 +3,13 @@ mixin navlink(text,location)
     a.nav-link(href=location)= text
 
 .navbar.space-top-page.navbar-expand-xl.bg-dark
-
-  a.navbar-brand(href='/home') Nihar Patel
+  a.navbar-brand(href='/') Nihar Patel
   button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
     span.navbar-toggler-icon
   #navbarSupportedContent.collapse.navbar-collapse
     ul.navbar-nav.mr-auto
     .navbar.nav.left
-        +navlink('Home','/home')
+        +navlink('Home','/')
         +navlink('About me','/about')
         +navlink('Project','/project')
         +navlink('Contact','/contact')

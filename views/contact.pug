@@ -1,5 +1,19 @@
 extends layout
  
 block content
-  h1= title
-  p Contact me please!!!!!!
+	form#contact-form(name='contact-form')
+	.md-form.text-white.bg-primary
+		label(for='name') Your name
+		input#name.form-control(type='text', name='name')
+	.md-form.text-white.bg-primary
+		label(for='email') Your email
+		input#email.form-control(type='text', name='email')
+	.md-form.text-white.bg-primary
+		label(for='subject') Subject
+		input#subject.form-control(type='text', name='subject')
+	.md-form.text-white.bg-primary
+		label(for='message') Your message
+		textarea#message.form-control.md-textarea(type='text', name='message', rows='2')
+	.text-center.text-md-left
+		a.btn.btn-success(onclick="document.getElementById('contact-form').submit();") Send
+
