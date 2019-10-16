@@ -1,10 +1,13 @@
+//- Author-name- Nihar Patel
+//- File-name- contact.pug
+//- File-description- This file is just a contact form to send me a message 
 extends layout
- 
+
 block content
 	form#contact-form(name='contact-form')
 	.md-form.text-white.bg-warning
 		label(for='name') Your name
-		input#name.form-control(type='text', name='name', required='')
+		input#name.form-control(type='text', name='name')
 	.md-form.text-white.bg-warning
 		label(for='email') Your email
 		input#email.form-control(type='text', name='email')

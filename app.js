@@ -1,3 +1,6 @@
+//- Author-name- Nihar Patel
+//- File-name-app.js 
+//- File-description- This is an JavaScript file used to operate different functions
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
