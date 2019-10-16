@@ -4,13 +4,14 @@
 mixin navlink(text,location)
     li.nav-item
     a.nav-link(href=location)= text
-
+//- use bootstrap class for nav-bar to make it resonsive
 .navbar.space-top-page.navbar-expand-xl.bg-secondary.fixed-top.container
   a.navbar-brand(href='/') Nihar Patel
   button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
     span.navbar-toggler-icon
   #navbarSupportedContent.collapse.navbar-collapse
     ul.navbar-nav.mr-auto
+    //- move all this item to the left
     .navbar.nav.left
         +navlink('Home','/')
         +navlink('About me','/about')

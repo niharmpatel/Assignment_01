@@ -1,6 +1,8 @@
 /* Author-name- Nihar Patel
 File-name- style.css 
 File-description- This is an css file used to design web pages  */
+
+/* Set backgroung-image with cover full screen and has fixed position  */
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -9,7 +11,7 @@ body {
   background-size:  cover;
   background-attachment: fixed;
 }
-
+/* set color of HTML link element */
 a {
   color: #00B7FF;
 }
