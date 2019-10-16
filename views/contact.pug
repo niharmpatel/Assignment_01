@@ -2,18 +2,17 @@ extends layout
  
 block content
 	form#contact-form(name='contact-form')
-	.md-form.text-white.bg-primary
+	.md-form.text-white.bg-warning
 		label(for='name') Your name
-		input#name.form-control(type='text', name='name')
-	.md-form.text-white.bg-primary
+		input#name.form-control(type='text', name='name', required='')
+	.md-form.text-white.bg-warning
 		label(for='email') Your email
 		input#email.form-control(type='text', name='email')
-	.md-form.text-white.bg-primary
+	.md-form.text-white.bg-warning
 		label(for='subject') Subject
 		input#subject.form-control(type='text', name='subject')
-	.md-form.text-white.bg-primary
+	.md-form.text-white.bg-warning
 		label(for='message') Your message
 		textarea#message.form-control.md-textarea(type='text', name='message', rows='2')
 	.text-center.text-md-left
 		a.btn.btn-success(onclick="document.getElementById('contact-form').submit();") Send
-

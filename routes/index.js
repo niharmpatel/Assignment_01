@@ -7,7 +7,6 @@ router.get('/', function(req, res, next) {
 });
 
 
-
 router.get('/about', function(req, res, next) {
   res.render('about', { title: 'About me' });
 });
@@ -19,5 +18,8 @@ router.get('/project', function(req, res, next) {
 
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact' });
+});
+router.get('/services', function(req, res, next) {
+  res.render('services', { title: 'Services Page' });
 });
 module.exports = router;
