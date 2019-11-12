@@ -12,12 +12,15 @@ mixin navlink(text,location)
   #navbarSupportedContent.collapse.navbar-collapse
     ul.navbar-nav.mr-auto
     //- move all this item to the left
-    .navbar.nav.left
+    .navbar.nav
         +navlink('Home','/')
         +navlink('About me','/about')
         +navlink('Project','/project')
         +navlink('Services Page', '/services')
         +navlink('Contact','/contact')
+        +navlink('Login', '/login')
+        +navlink('Register', '/register')
+  
       
               
     
